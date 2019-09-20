@@ -1,5 +1,6 @@
-# OOAD
+# OOAD Project 1
 
 Names: Natnael Abraha, Chan Lee, and Joshua Barber
 
-When we're creating the Cat class it contains the "makeNoise()" method, which permits the Cat object to behave in maltipule ways.
+Assumption: For creating method for random behavior of cat, we interpreted it as behaving differently in random manner when same method is called. In our case, we created "makeNoise()" method, which permits the Cat object to behave in two different ways depending on the random number generated.
+
