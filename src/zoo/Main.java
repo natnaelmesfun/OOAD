@@ -14,6 +14,8 @@ public class Main {
 	
 		Animals[] store = {catie, canny, lune, larry};
 		
+		// zoo keeper calls each animal with all the duties he has to perform
+		
 		for(int i=0; i<store.length; i++) {
 			john.wake(store[i]);
 			john.rollCall(store[i]);
@@ -21,8 +23,7 @@ public class Main {
 			john.exercise(store[i]);
 			john.shut(store[i]);
 		}
- 		
-		
-		
 	}
+	
+	// Reference : Manjunaht gave me great help!
 }

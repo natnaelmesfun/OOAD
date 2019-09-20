@@ -1,0 +1,40 @@
+wake animals
+My type is class zoo.Cat Catie,good morning
+Calling animals
+My type is class zoo.Cat Catie Me-yao
+feed animals
+My type is class zoo.Cat Catie Eating my meal
+exercise animals
+My type is class zoo.Cat Catie Moving around
+Shut the zoo
+My type is class zoo.Cat Catie Going to sleep
+wake animals
+My type is class zoo.Cat Canny,good morning
+Calling animals
+My type is class zoo.Cat Canny Me-yao
+feed animals
+My type is class zoo.Cat Canny Eating my meal
+exercise animals
+My type is class zoo.Cat Canny Moving around
+Shut the zoo
+My type is class zoo.Cat Canny Going to sleep
+wake animals
+My type is class zoo.Lion Lune,good morning
+Calling animals
+class zoo.Lion Lune  growling
+feed animals
+My type is class zoo.Lion Lune Eating my meal
+exercise animals
+My type is class zoo.Lion Lune Moving around
+Shut the zoo
+My type is class zoo.Lion Lune Going to sleep
+wake animals
+My type is class zoo.Lion Larry,good morning
+Calling animals
+class zoo.Lion Larry  growling
+feed animals
+My type is class zoo.Lion Larry Eating my meal
+exercise animals
+My type is class zoo.Lion Larry Moving around
+Shut the zoo
+My type is class zoo.Lion Larry Going to sleep

@@ -2,6 +2,8 @@ package zoo;
 public class Animals {
 	public String name;
 	
+	// Create constructor that takes in String name
+	
 	public Animals(String name) {
 		this.name = name;
 	}

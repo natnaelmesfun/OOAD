@@ -6,6 +6,10 @@ public class Cat extends Feline {
 	}
 	
 	
+	/* creates random number from [0,1] , and if that number is below or equal to 0.5, 
+	 * invoke makeNoise1() otherwise, invoke makeNoise2()
+	 */
+	
 	public void makeNoise() {
 		double x = Math.random();
 		
