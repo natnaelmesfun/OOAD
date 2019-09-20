@@ -25,5 +25,5 @@ public class Main {
 		}
 	}
 	
-	// Reference : Manjunah gave me great help!
+	// Reference : TA Manjunah gave us great help!
 }
