@@ -30,4 +30,7 @@ public class Cat extends Feline {
 		System.out.println("My type is " + this.getClass() + " " + this.name + " Hello");
 	}
 	
+	// Reference: https://dzone.com/articles/random-number-generation-in-java
+	// for random number generator
+	
 }
