@@ -31,6 +31,6 @@ public class Cat extends Feline {
 	}
 	
 	// Reference: https://dzone.com/articles/random-number-generation-in-java
-	// for random number generator
+	// for random number generator1
 	
 }
