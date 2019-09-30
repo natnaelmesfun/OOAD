@@ -3,6 +3,7 @@
 
 # In[3]:
 
+from Animals import Animals
 
 class ZooKeeper:
 #     Zoo keeper performs his duty through different methods listed below.
@@ -10,23 +11,23 @@ class ZooKeeper:
 #     when Zoo Keeper executes certain action.
 
 
-    def wake(animal):
+    def wake(self, Animals):
         print("wake animals")
-        animal.wakingUp()
+        Animals.wakingUp()
 
-    def rollCall(animal):
+    def rollCall(self, Animals):
         print("Calling animals")
-        animal.makeNoise()
+        Animals.makeNoise()
 
-    def feed(animal):
+    def feed(self, Animals):
         print("feed animals")
-        animal.eat()
+        Animals.eat()
 
-    def exercise(animal):
+    def exercise(self, Animals):
         print("exercise animals")
-        animal.roam()
+        Animals.roam()
 
-    def shut(animal):
+    def shut(self, Animals):
         print("Shut the zoo")
-        animal.sleep()
+        Animals.sleep()
 

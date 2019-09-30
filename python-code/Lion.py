@@ -4,7 +4,7 @@
 # In[1]:
 
 
-import Feline
+from Feline import Feline
 
 class Lion(Feline):
     
@@ -15,6 +15,5 @@ class Lion(Feline):
         
 #     overrides the makeNoise() method from the Feline class
 
-    def makeNoise():
-        print(self.__class__.__name__, self.name, " growling", sep =" ");
-
+    def makeNoise(self):
+        print(self.__class__.__name__, self.name, " growling")

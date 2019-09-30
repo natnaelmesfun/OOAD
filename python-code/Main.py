@@ -1,7 +1,8 @@
-import Cat
-import Lion
-import ZooKeeper
-
+from Cat import Cat
+from Lion import Lion
+from ZooKeeper import ZooKeeper
+from Animals import Animals
+from Feline import Feline
 
 
 class Main:
@@ -13,11 +14,11 @@ class Main:
         john = ZooKeeper()
 
         store = [catie, canny, lune, larry]
-
-        for animal in store:
-            john.wake(store[animal])
-            john.rollCall(store[animal])
-            john.feed(store[animal])
-            john.exercise(store[animal])
-            john.shut(store[animal])
+        
+        for i in range(len(store)):
+            john.wake(store[i])
+            john.rollCall(store[i])
+            john.feed(store[i])
+            john.exercise(store[i])
+            john.shut(store[i])
 

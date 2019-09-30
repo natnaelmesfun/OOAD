@@ -1,10 +1,10 @@
+from Animals import Animals
 
-import Animal
-class Feline(Animal):
+class Feline(Animals):
     def __init__(self, name):
         self.name = name
 
-    def hasTails():
+    def hasTails(self):
         print(self.name, " have tail.")
 
     def makeNoise():
