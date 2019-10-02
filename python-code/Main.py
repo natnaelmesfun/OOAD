@@ -1,6 +1,7 @@
 from Cat import Cat
 from Lion import Lion
 from ZooKeeper import ZooKeeper
+from zooAnouncer import zooAnouncer
 from Animals import Animals
 from Feline import Feline
 
@@ -14,6 +15,9 @@ class Main:
         john = ZooKeeper()
 
         store = [catie, canny, lune, larry]
+
+        shelly = zooAnouncer()
+        shelly.subscribe(john)
         
         for i in range(len(store)):
             john.wake(store[i])
@@ -22,5 +26,3 @@ class Main:
             john.exercise(store[i])
             john.shut(store[i])
         
-        
-

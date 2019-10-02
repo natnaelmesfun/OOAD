@@ -1,15 +1,18 @@
 from abc import *
-from ZooKeeper import *
+from ZooKeeper import ZooKeeper
 
 class observerInterface():
-    def subscribe(): pass
-    def unsubsribe(): pass
+    def subscribe(self): pass
+    def unsubsribe(self): pass
 
 
 class zooAnouncer(observerInterface):
-    def subsribe(self):
-        ZooKeeper.registerObserver(self)
-    def unscribe(self):
-        ZooKeeper.removeObserver(self)
+
+    def subscribe(self, zoo):
+        print("subscribe")
+        zoo.registerObserver(self)
+    def unscribe(self, zoo):
+        zoo.removeObserver(self)
     def update(self, order):
+        print("Hi This is ZooAnnouncer. The Zookeeper is about to")
         print(order)

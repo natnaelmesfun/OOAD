@@ -5,7 +5,7 @@
 
 from Animals import Animals
 from abc import *
-from zooAnouncer import *
+# from zooAnouncer import zooAnouncer
 
 class zooInterface():
     def registerObserver(self): pass
@@ -13,15 +13,18 @@ class zooInterface():
     def notifyObserver(self): pass
 
 class ZooKeeper(zooInterface):
-#     Zoo keeper performs his duty through different methods listed below.
+
+    def __init__(self):
+        self.observers = []
+    #     Zoo keeper performs his duty through different methods listed below.
 #     Each method takes it animal object as a parameter so it can ask corresponding move for animals to behave
 #     when Zoo Keeper executes certain action.
-    observers = []
 
     def registerObserver(self, observer):
-        observers.append(observer)
+        self.observers.append(observer)
+        # print(observer)
     def removeObserver(self, observer):
-        observers.remove(observer)
+        self.observers.remove(observer)
     def notifyObserver(self, order):
         for obs in self.observers:
             obs.update(order)
