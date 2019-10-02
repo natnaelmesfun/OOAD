@@ -21,4 +21,6 @@ class Main:
             john.feed(store[i])
             john.exercise(store[i])
             john.shut(store[i])
+        
+        
 

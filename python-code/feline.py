@@ -7,5 +7,5 @@ class Feline(Animals):
     def hasTails(self):
         print(self.name, " have tail.")
 
-    def makeNoise():
-        print("Feline making noise")
+    # def makeNoise():
+        # print("Feline making noise")
