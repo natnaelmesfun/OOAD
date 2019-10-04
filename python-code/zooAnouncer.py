@@ -9,10 +9,11 @@ class observerInterface():
 class zooAnouncer(observerInterface):
 
     def subscribe(self, zoo):
-        print("subscribe")
+        # print("subscribe")
         zoo.registerObserver(self)
-    def unscribe(self, zoo):
+    def unsubscribe(self, zoo):
+        # print("unsubscribe")
         zoo.removeObserver(self)
     def update(self, order):
         print("Hi This is ZooAnnouncer. The Zookeeper is about to")
-        print(order)
+        print(order)    

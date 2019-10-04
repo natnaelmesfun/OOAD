@@ -20,10 +20,11 @@ class Main:
         shelly.subscribe(john)
         
         
-        for i in range(len(store)):
-            john.wake(store[i])
-            john.rollCall(store[i])
-            john.feed(store[i])
-            john.exercise(store[i])
-            john.shut(store[i])
-        
+        john.wake(store)
+        john.rollCall(store)
+        john.feed(store)
+        john.exercise(store)
+        john.shut(store)
+
+
+        shelly.unsubscribe(john)

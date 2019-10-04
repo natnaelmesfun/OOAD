@@ -30,23 +30,28 @@ class ZooKeeper(zooInterface):
         for obs in self.observers:
             obs.update(order)
 
-    def wake(self, Animals):
+    def wake(self, animals):
         self.notifyObserver("wake animals")
-        Animals.wakingUp()
+        for animal in animals:
+            animal.wakingUp()
 
-    def rollCall(self, Animals):
-        self.notifyObserver("Calling animals")
-        Animals.makeNoise()
+    def rollCall(self, animals):
+        self.notifyObserver("call animals")
+        for animal in animals:
+            animal.makeNoise()
 
-    def feed(self, Animals):
+    def feed(self, animals):
         self.notifyObserver("feed animals")
-        Animals.eat()
+        for animal in animals:
+            animal.eat()
 
-    def exercise(self, Animals):
+    def exercise(self, animals):
         self.notifyObserver("exercise animals")
-        Animals.roam()
+        for animal in animals:
+            animal.roam()
 
-    def shut(self, Animals):
-        self.notifyObserver("Shut the zoo")
-        Animals.sleep()
+    def shut(self, animals):
+        self.notifyObserver("shut the zoo")
+        for animal in animals:
+            animal.sleep()
 
