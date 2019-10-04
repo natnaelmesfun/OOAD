@@ -2,6 +2,8 @@ import random
 from Feline import Feline 
 from Animals import *
 
+# Creates constructor with name and sound 
+
 class Cat(Feline):
     def __init__(self,name):
         self.name = name

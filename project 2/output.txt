@@ -1,0 +1,30 @@
+Hi This is ZooAnnouncer. The Zookeeper is about to
+wake animals
+('My type is ', 'Cat', 'catie', 'good morning')
+('My type is ', 'Cat', 'cannie', 'good morning')
+('My type is ', 'Lion', 'Lune', 'good morning')
+('My type is ', 'Lion', 'Larry', 'good morning')
+Hi This is ZooAnnouncer. The Zookeeper is about to
+call animals
+('My type is ', 'Cat', 'catie', 'hiss')
+('My type is ', 'Cat', 'cannie', 'hiss')
+('My type is ', 'Lion', 'Lune', 'growl')
+('My type is ', 'Lion', 'Larry', 'growl')
+Hi This is ZooAnnouncer. The Zookeeper is about to
+feed animals
+('My type is ', 'Cat', 'catie', ' Eating my meal')
+('My type is ', 'Cat', 'cannie', ' Eating my meal')
+('My type is ', 'Lion', 'Lune', ' Eating my meal')
+('My type is ', 'Lion', 'Larry', ' Eating my meal')
+Hi This is ZooAnnouncer. The Zookeeper is about to
+exercise animals
+('My type is ', 'Cat', 'catie', ' Moving around')
+('My type is ', 'Cat', 'cannie', ' Moving around')
+('My type is ', 'Lion', 'Lune', ' Moving around')
+('My type is ', 'Lion', 'Larry', ' Moving around')
+Hi This is ZooAnnouncer. The Zookeeper is about to
+shut the zoo
+('My type is ', 'Cat', 'catie', ' Going to sleep')
+('My type is ', 'Cat', 'cannie', ' Going to sleep')
+('My type is ', 'Lion', 'Lune', ' Going to sleep')
+('My type is ', 'Lion', 'Larry', ' Going to sleep')

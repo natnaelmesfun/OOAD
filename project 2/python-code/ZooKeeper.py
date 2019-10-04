@@ -5,7 +5,8 @@
 
 from Animals import Animals
 from abc import *
-# from zooAnouncer import zooAnouncer
+
+# observer pattern is applied 
 
 class zooInterface():
     def registerObserver(self): pass

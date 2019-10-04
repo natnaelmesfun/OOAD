@@ -3,7 +3,7 @@
 
 # In[5]:
 
-#  HissNoise, GrowlNoise
+#  Strategy pattern is applied
 
 import abc
 class makeNoise():
@@ -17,7 +17,7 @@ class growlNoise(makeNoise):
     def Noise(self):
         return "growl"
 
-
+# sound variable is used to get the noise sound of different animals
 class Animals:
 
     sound = None

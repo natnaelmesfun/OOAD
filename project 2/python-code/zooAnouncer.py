@@ -1,6 +1,8 @@
 from abc import *
 from ZooKeeper import ZooKeeper
 
+# observer pattern is applied
+
 class observerInterface():
     def subscribe(self): pass
     def unsubsribe(self): pass

@@ -8,7 +8,7 @@ from Feline import Feline
 from Animals import *
 
 class Lion(Feline):
-#     Creates constructor that takes in String name
+#     Creates constructor that takes in String name and sound
 
     def __init__(self, name):
         self.name = name
