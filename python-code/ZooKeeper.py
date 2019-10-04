@@ -25,6 +25,7 @@ class ZooKeeper(zooInterface):
         # print(observer)
     def removeObserver(self, observer):
         self.observers.remove(observer)
+        
     def notifyObserver(self, order):
         for obs in self.observers:
             obs.update(order)

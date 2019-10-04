@@ -19,6 +19,7 @@ class Main:
         shelly = zooAnouncer()
         shelly.subscribe(john)
         
+        
         for i in range(len(store)):
             john.wake(store[i])
             john.rollCall(store[i])
