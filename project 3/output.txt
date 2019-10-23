@@ -1,307 +1,297 @@
-String from x is Hello I am a string part of Singleton class
 allTools: [[Paint0, Paint1, Paint2, Paint3, Paint4], [Concrete0, Concrete1, Concrete2, Concrete3, Concrete4], [Yardwork0, Yardwork1, Yardwork2, Yardwork3, Yardwork4], [Plumbing0, Plumbing1, Plumbing2, Plumbing3, Plumbing4], [Woodwork0, Woodwork1, Woodwork2, Woodwork3]]
 DAY: 1
 Remaining tools after customers return tools: [[Paint0, Paint1, Paint2, Paint3, Paint4], [Concrete0, Concrete1, Concrete2, Concrete3, Concrete4], [Yardwork0, Yardwork1, Yardwork2, Yardwork3, Yardwork4], [Plumbing0, Plumbing1, Plumbing2, Plumbing3, Plumbing4], [Woodwork0, Woodwork1, Woodwork2, Woodwork3]]
-BruceCasul rented: [Paint0] Day length of rent time: 1 Price: $15
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-RosaCasul rented: [Paint2, Paint4] Day length of rent time: 2 Price: $30
-BlakeBuss rented: [Concrete2, Concrete0, Concrete3] Day length of rent time: 3 Price: $90
-JoeBuss rented: [Yardwork3, Yardwork0, Yardwork4] Day length of rent time: 3 Price: $135
-MikeBuss rented: [Plumbing4, Plumbing0, Plumbing3] Day length of rent time: 3 Price: $150
-JohnBuss rented: [Woodwork3, Woodwork2, Woodwork0] Day length of rent time: 3 Price: $60
-Total amount made for the day: $510
-Remaining tools in the rental store: [[], [Concrete1, Concrete4], [Yardwork1, Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
+BruceCasul rented: [Paint3, Paint1] Day length of rent time: 2 Price: $30
+BlakeBuss rented: [Paint4, Paint2, Paint0] Day length of rent time: 3 Price: $45
+RickyReg rented: [Concrete0, Concrete4] Day length of rent time: 2 Price: $60
+BobReg rented: [Concrete3, Concrete1, Concrete2] Day length of rent time: 3 Price: $90
+PhilReg rented: [Yardwork0] Day length of rent time: 1 Price: $45
+RonReg rented: [Yardwork1] Day length of rent time: 1 Price: $45
+Total amount made for the day: $315
+Remaining tools in the rental store: [[], [], [Yardwork2, Yardwork3, Yardwork4], [Plumbing0, Plumbing1, Plumbing2, Plumbing3, Plumbing4], [Woodwork0, Woodwork1, Woodwork2, Woodwork3]]
 
 
 DAY: 2
-Remaining tools after customers return tools: [[], [Concrete1, Concrete4], [Yardwork1, Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
-BobReg rented: [Concrete1, Concrete4] Day length of rent time: 2 Price: $60
-PhilReg rented: [Yardwork1] Day length of rent time: 1 Price: $45
-Total amount made for the day: $105
-Remaining tools in the rental store: [[], [], [Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
+Remaining tools after customers return tools: [[], [], [Yardwork2, Yardwork3, Yardwork4], [Plumbing0, Plumbing1, Plumbing2, Plumbing3, Plumbing4], [Woodwork0, Woodwork1, Woodwork2, Woodwork3]]
+NateCasul rented: [Yardwork2, Yardwork3] Day length of rent time: 2 Price: $90
+JoeBuss rented: [Plumbing2, Plumbing1, Plumbing3] Day length of rent time: 3 Price: $150
+RickyReg rented: [Woodwork0, Woodwork3, Woodwork1] Day length of rent time: 3 Price: $60
+BobReg rented: [Yardwork4] Day length of rent time: 1 Price: $45
+PhilReg rented: [Plumbing4, Plumbing0] Day length of rent time: 2 Price: $100
+RonReg rented: [Woodwork2] Day length of rent time: 1 Price: $20
+Total amount made for the day: $465
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 3
-Remaining tools after customers return tools: [[Paint0, Paint3, Paint1, Paint2, Paint4], [], [Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
-BruceCasul rented: [Paint0] Day length of rent time: 1 Price: $15
-NateCasul rented: [Paint4, Paint1] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Paint2, Paint3] Day length of rent time: 2 Price: $30
-Total amount made for the day: $75
-Remaining tools in the rental store: [[], [], [Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
+Remaining tools after customers return tools: [[Paint3, Paint1], [], [], [], []]
+BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+RickyReg rented: [Paint3] Day length of rent time: 1 Price: $15
+Total amount made for the day: $30
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 4
-Remaining tools after customers return tools: [[], [], [Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
-RosaCasul rented: [Yardwork2] Day length of rent time: 1 Price: $45
-RickyReg rented: [Plumbing1, Plumbing2] Day length of rent time: 2 Price: $100
-Total amount made for the day: $145
-Remaining tools in the rental store: [[], [], [], [], [Woodwork1]]
+Remaining tools after customers return tools: [[], [Concrete0, Concrete4, Concrete3, Concrete1, Concrete2], [Yardwork0, Yardwork2, Yardwork3, Yardwork1], [], []]
+NateCasul rented: [Concrete3, Concrete1] Day length of rent time: 2 Price: $60
+MikeBuss rented: [Concrete4, Concrete2, Concrete0] Day length of rent time: 3 Price: $90
+JohnBuss rented: [Yardwork2, Yardwork1, Yardwork3] Day length of rent time: 3 Price: $135
+Total amount made for the day: $285
+Remaining tools in the rental store: [[], [], [Yardwork0], [], []]
 
 
 DAY: 5
-Remaining tools after customers return tools: [[Paint0, Paint4, Paint1, Paint2, Paint3], [Concrete1, Concrete4], [Yardwork1], [], [Woodwork1]]
-BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-RickyReg rented: [Paint0] Day length of rent time: 1 Price: $15
-RonReg rented: [Paint1] Day length of rent time: 1 Price: $15
-Total amount made for the day: $45
-Remaining tools in the rental store: [[Paint4, Paint3], [Concrete1, Concrete4], [Yardwork1], [], [Woodwork1]]
+Remaining tools after customers return tools: [[Paint1], [], [Yardwork0], [], []]
+BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+JoshCasul rented: [Yardwork0] Day length of rent time: 1 Price: $45
+Total amount made for the day: $60
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 6
-Remaining tools after customers return tools: [[Paint4, Paint3], [Concrete1, Concrete4], [Yardwork1, Yardwork2], [], [Woodwork1]]
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-RickyReg rented: [Paint4] Day length of rent time: 1 Price: $15
-RonReg rented: [Concrete1] Day length of rent time: 1 Price: $30
+Remaining tools after customers return tools: [[], [Concrete3, Concrete1], [], [], []]
+NateCasul rented: [Concrete1, Concrete3] Day length of rent time: 2 Price: $60
 Total amount made for the day: $60
-Remaining tools in the rental store: [[], [Concrete4], [Yardwork1, Yardwork2], [], [Woodwork1]]
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 7
-Remaining tools after customers return tools: [[Paint2], [Concrete4], [Yardwork1, Yardwork2], [Plumbing1, Plumbing2], [Woodwork1]]
-BruceCasul rented: [Yardwork2, Yardwork1] Day length of rent time: 2 Price: $90
-JoshCasul rented: [Plumbing1, Plumbing2] Day length of rent time: 2 Price: $100
-RosaCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-Total amount made for the day: $205
-Remaining tools in the rental store: [[], [Concrete4], [], [], [Woodwork1]]
+Remaining tools after customers return tools: [[Paint1], [], [Yardwork0], [], []]
+Total amount made for the day: $0
+Remaining tools in the rental store: [[Paint1], [], [Yardwork0], [], []]
 
 
 DAY: 8
-Remaining tools after customers return tools: [[Paint3, Paint1], [Concrete4, Concrete2, Concrete0, Concrete3], [Yardwork3, Yardwork0, Yardwork4], [Plumbing4, Plumbing0, Plumbing3], [Woodwork1, Woodwork3, Woodwork2, Woodwork0]]
-NateCasul rented: [Paint1, Paint3] Day length of rent time: 2 Price: $30
-BlakeBuss rented: [Concrete2, Concrete4, Concrete0] Day length of rent time: 3 Price: $90
-Total amount made for the day: $120
-Remaining tools in the rental store: [[], [Concrete3], [Yardwork3, Yardwork0, Yardwork4], [Plumbing4, Plumbing0, Plumbing3], [Woodwork1, Woodwork3, Woodwork2, Woodwork0]]
+Remaining tools after customers return tools: [[Paint1, Paint4, Paint2, Paint0], [Concrete1, Concrete3], [Yardwork0], [], []]
+BruceCasul rented: [Paint2, Paint0] Day length of rent time: 2 Price: $30
+NateCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+JoshCasul rented: [Concrete3, Concrete1] Day length of rent time: 2 Price: $60
+Total amount made for the day: $105
+Remaining tools in the rental store: [[Paint1], [], [Yardwork0], [], []]
 
 
 DAY: 9
-Remaining tools after customers return tools: [[Paint2], [Concrete3], [Yardwork3, Yardwork0, Yardwork4, Yardwork2, Yardwork1], [Plumbing4, Plumbing0, Plumbing3, Plumbing1, Plumbing2], [Woodwork1, Woodwork3, Woodwork2, Woodwork0]]
-BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Concrete3] Day length of rent time: 1 Price: $30
-JoeBuss rented: [Yardwork4, Yardwork3, Yardwork0] Day length of rent time: 3 Price: $135
-MikeBuss rented: [Plumbing0, Plumbing4, Plumbing3] Day length of rent time: 3 Price: $150
-Total amount made for the day: $330
-Remaining tools in the rental store: [[], [], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork1, Woodwork3, Woodwork2, Woodwork0]]
+Remaining tools after customers return tools: [[Paint1], [], [Yardwork0], [Plumbing2, Plumbing1, Plumbing3], []]
+RosaCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+BlakeBuss rented: [Plumbing3, Plumbing1, Plumbing2] Day length of rent time: 3 Price: $150
+Total amount made for the day: $165
+Remaining tools in the rental store: [[], [], [Yardwork0], [], []]
 
 
 DAY: 10
-Remaining tools after customers return tools: [[Paint1, Paint3], [], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork1, Woodwork3, Woodwork2, Woodwork0]]
-NateCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-JohnBuss rented: [Woodwork1, Woodwork0, Woodwork2] Day length of rent time: 3 Price: $60
-Total amount made for the day: $75
-Remaining tools in the rental store: [[Paint3], [], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint2, Paint0, Paint4], [Concrete3, Concrete1], [Yardwork0], [], []]
+BruceCasul rented: [Paint0, Paint4] Day length of rent time: 2 Price: $30
+NateCasul rented: [Concrete1, Concrete3] Day length of rent time: 2 Price: $60
+Total amount made for the day: $90
+Remaining tools in the rental store: [[Paint2], [], [Yardwork0], [], []]
 
 
 DAY: 11
-Remaining tools after customers return tools: [[Paint3, Paint2], [Concrete3], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork3]]
-BruceCasul rented: [Paint2, Paint3] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Concrete3] Day length of rent time: 1 Price: $30
-Total amount made for the day: $60
-Remaining tools in the rental store: [[], [], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint2, Paint1], [Concrete4, Concrete2, Concrete0], [Yardwork0, Yardwork2, Yardwork1, Yardwork3], [], []]
+JoshCasul rented: [Paint1, Paint2] Day length of rent time: 2 Price: $30
+RosaCasul rented: [Concrete2, Concrete4] Day length of rent time: 2 Price: $60
+JoeBuss rented: [Yardwork1, Yardwork0, Yardwork2] Day length of rent time: 3 Price: $135
+Total amount made for the day: $225
+Remaining tools in the rental store: [[], [Concrete0], [Yardwork3], [], []]
 
 
 DAY: 12
-Remaining tools after customers return tools: [[Paint1], [], [Yardwork2, Yardwork1], [Plumbing1, Plumbing2], [Woodwork3]]
-NateCasul rented: [Yardwork1, Yardwork2] Day length of rent time: 2 Price: $90
-RosaCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-Total amount made for the day: $105
-Remaining tools in the rental store: [[], [], [], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint0, Paint4], [Concrete0, Concrete1, Concrete3], [Yardwork3], [], []]
+BruceCasul rented: [Paint0] Day length of rent time: 1 Price: $15
+NateCasul rented: [Concrete1, Concrete3] Day length of rent time: 2 Price: $60
+Total amount made for the day: $75
+Remaining tools in the rental store: [[Paint4], [Concrete0], [Yardwork3], [], []]
 
 
 DAY: 13
-Remaining tools after customers return tools: [[Paint2, Paint3], [Concrete3], [], [Plumbing1, Plumbing2], [Woodwork3]]
-BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-Total amount made for the day: $15
-Remaining tools in the rental store: [[Paint3], [Concrete3], [], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint4, Paint1, Paint2], [Concrete0, Concrete2, Concrete4], [Yardwork3], [], []]
+JoshCasul rented: [Paint1, Paint4] Day length of rent time: 2 Price: $30
+RosaCasul rented: [Concrete2, Concrete4] Day length of rent time: 2 Price: $60
+Total amount made for the day: $90
+Remaining tools in the rental store: [[Paint2], [Concrete0], [Yardwork3], [], []]
 
 
 DAY: 14
-Remaining tools after customers return tools: [[Paint3, Paint1], [Concrete3], [Yardwork1, Yardwork2], [Plumbing1, Plumbing2], [Woodwork3]]
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-RosaCasul rented: [Yardwork2, Yardwork1] Day length of rent time: 2 Price: $90
-Total amount made for the day: $120
-Remaining tools in the rental store: [[], [Concrete3], [], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint2, Paint0], [Concrete0, Concrete1, Concrete3], [Yardwork3], [], []]
+BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
+MikeBuss rented: [Concrete3, Concrete1, Concrete0] Day length of rent time: 3 Price: $90
+Total amount made for the day: $105
+Remaining tools in the rental store: [[Paint0], [], [Yardwork3], [], []]
 
 
 DAY: 15
-Remaining tools after customers return tools: [[Paint2], [Concrete3, Concrete2, Concrete4, Concrete0], [], [Plumbing1, Plumbing2], [Woodwork3]]
-BruceCasul rented: [Concrete4, Concrete3] Day length of rent time: 2 Price: $60
-Total amount made for the day: $60
-Remaining tools in the rental store: [[Paint2], [Concrete2, Concrete0], [], [Plumbing1, Plumbing2], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint0, Paint1, Paint4], [Concrete2, Concrete4], [Yardwork3], [], []]
+NateCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+JoshCasul rented: [Paint0, Paint1] Day length of rent time: 2 Price: $30
+RosaCasul rented: [Concrete2, Concrete4] Day length of rent time: 2 Price: $60
+Total amount made for the day: $105
+Remaining tools in the rental store: [[], [], [Yardwork3], [], []]
 
 
 DAY: 16
-Remaining tools after customers return tools: [[Paint2, Paint3, Paint1], [Concrete2, Concrete0], [Yardwork4, Yardwork3, Yardwork0, Yardwork2, Yardwork1], [Plumbing1, Plumbing2, Plumbing0, Plumbing4, Plumbing3], [Woodwork3]]
-NateCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-BlakeBuss rented: [Yardwork0, Yardwork1, Yardwork2] Day length of rent time: 3 Price: $135
-JoeBuss rented: [Plumbing0, Plumbing2, Plumbing3] Day length of rent time: 3 Price: $150
-Total amount made for the day: $300
-Remaining tools in the rental store: [[Paint3, Paint1], [Concrete2, Concrete0], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint2], [], [Yardwork3], [Plumbing3, Plumbing1, Plumbing2], []]
+BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
+BlakeBuss rented: [Plumbing1, Plumbing3, Plumbing2] Day length of rent time: 3 Price: $150
+Total amount made for the day: $165
+Remaining tools in the rental store: [[], [], [Yardwork3], [], []]
 
 
 DAY: 17
-Remaining tools after customers return tools: [[Paint3, Paint1], [Concrete2, Concrete0, Concrete4, Concrete3], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork3, Woodwork1, Woodwork0, Woodwork2]]
-BruceCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Concrete4, Concrete3] Day length of rent time: 2 Price: $60
-RosaCasul rented: [Concrete0, Concrete2] Day length of rent time: 2 Price: $60
-MikeBuss rented: [Woodwork3, Woodwork2, Woodwork1] Day length of rent time: 3 Price: $60
-Total amount made for the day: $195
-Remaining tools in the rental store: [[Paint1], [], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint4, Paint0, Paint1], [Concrete2, Concrete4], [Yardwork3], [], []]
+NateCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+JoshCasul rented: [Paint1, Paint0] Day length of rent time: 2 Price: $30
+RosaCasul rented: [Concrete2, Concrete4] Day length of rent time: 2 Price: $60
+Total amount made for the day: $105
+Remaining tools in the rental store: [[], [], [Yardwork3], [], []]
 
 
 DAY: 18
-Remaining tools after customers return tools: [[Paint1, Paint2], [], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
-NateCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-Total amount made for the day: $15
-Remaining tools in the rental store: [[Paint2], [], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint2], [], [Yardwork3, Yardwork1, Yardwork0, Yardwork2], [], []]
+BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
+JoeBuss rented: [Yardwork1, Yardwork3, Yardwork0] Day length of rent time: 3 Price: $135
+Total amount made for the day: $150
+Remaining tools in the rental store: [[], [], [Yardwork2], [], []]
 
 
 DAY: 19
-Remaining tools after customers return tools: [[Paint2, Paint3], [Concrete4, Concrete3, Concrete0, Concrete2], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
-BruceCasul rented: [Paint3, Paint2] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Concrete0, Concrete3] Day length of rent time: 2 Price: $60
-RosaCasul rented: [Concrete2] Day length of rent time: 1 Price: $30
-Total amount made for the day: $120
-Remaining tools in the rental store: [[], [Concrete4], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint4, Paint1, Paint0], [Concrete2, Concrete4], [Yardwork2], [], []]
+NateCasul rented: [Paint1, Paint4] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete2, Concrete4] Day length of rent time: 2 Price: $60
+RosaCasul rented: [Paint0] Day length of rent time: 1 Price: $15
+Total amount made for the day: $105
+Remaining tools in the rental store: [[], [], [Yardwork2], [], []]
 
 
 DAY: 20
-Remaining tools after customers return tools: [[Paint1], [Concrete4], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
-NateCasul rented: [Yardwork4, Yardwork3] Day length of rent time: 2 Price: $90
-Total amount made for the day: $90
-Remaining tools in the rental store: [[Paint1], [Concrete4], [], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint2], [], [Yardwork2], [], []]
+Total amount made for the day: $0
+Remaining tools in the rental store: [[Paint2], [], [Yardwork2], [], []]
 
 
 DAY: 21
-Remaining tools after customers return tools: [[Paint1, Paint3, Paint2], [Concrete4, Concrete0, Concrete3, Concrete2], [], [Plumbing1, Plumbing4], [Woodwork0]]
-BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Paint1, Paint3] Day length of rent time: 2 Price: $30
-RosaCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-JohnBuss rented: [Concrete2, Concrete4, Concrete3] Day length of rent time: 3 Price: $90
+Remaining tools after customers return tools: [[Paint2, Paint1, Paint4, Paint0], [Concrete3, Concrete1, Concrete0, Concrete2, Concrete4], [Yardwork2], [], []]
+BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+NateCasul rented: [Paint0, Paint2] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete4, Concrete2] Day length of rent time: 2 Price: $60
+RosaCasul rented: [Concrete0, Concrete3] Day length of rent time: 2 Price: $60
 Total amount made for the day: $165
-Remaining tools in the rental store: [[], [], [], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools in the rental store: [[Paint4], [Concrete1], [Yardwork2], [], []]
 
 
 DAY: 22
-Remaining tools after customers return tools: [[], [], [Yardwork4, Yardwork3], [Plumbing1, Plumbing4], [Woodwork0]]
-NateCasul rented: [Yardwork3, Yardwork4] Day length of rent time: 2 Price: $90
-Total amount made for the day: $90
-Remaining tools in the rental store: [[], [], [], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint4], [Concrete1], [Yardwork2], [], []]
+Total amount made for the day: $0
+Remaining tools in the rental store: [[Paint4], [Concrete1], [Yardwork2], [], []]
 
 
 DAY: 23
-Remaining tools after customers return tools: [[Paint2, Paint1, Paint3], [Concrete0], [Yardwork0, Yardwork1, Yardwork2], [Plumbing1, Plumbing4, Plumbing0, Plumbing2, Plumbing3], [Woodwork0]]
-BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-BlakeBuss rented: [Yardwork1, Yardwork0, Yardwork2] Day length of rent time: 3 Price: $135
-JoeBuss rented: [Plumbing0, Plumbing3, Plumbing2] Day length of rent time: 3 Price: $150
-Total amount made for the day: $315
-Remaining tools in the rental store: [[Paint3], [Concrete0], [], [Plumbing1, Plumbing4], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint4, Paint1, Paint0, Paint2], [Concrete1, Concrete4, Concrete2, Concrete0, Concrete3], [Yardwork2], [Plumbing1, Plumbing3, Plumbing2], []]
+BruceCasul rented: [Paint1, Paint4] Day length of rent time: 2 Price: $30
+BlakeBuss rented: [Concrete4, Concrete0, Concrete2] Day length of rent time: 3 Price: $90
+Total amount made for the day: $120
+Remaining tools in the rental store: [[Paint0, Paint2], [Concrete1, Concrete3], [Yardwork2], [Plumbing1, Plumbing3, Plumbing2], []]
 
 
 DAY: 24
-Remaining tools after customers return tools: [[Paint3], [Concrete0], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork0, Woodwork3, Woodwork2, Woodwork1]]
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-RosaCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-MikeBuss rented: [Woodwork1, Woodwork2, Woodwork0] Day length of rent time: 3 Price: $60
-Total amount made for the day: $105
-Remaining tools in the rental store: [[], [], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint0, Paint2], [Concrete1, Concrete3], [Yardwork2], [Plumbing1, Plumbing3, Plumbing2], []]
+NateCasul rented: [Paint0, Paint2] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete3, Concrete1] Day length of rent time: 2 Price: $60
+RosaCasul rented: [Plumbing1, Plumbing3] Day length of rent time: 2 Price: $100
+Total amount made for the day: $190
+Remaining tools in the rental store: [[], [], [Yardwork2], [Plumbing2], []]
 
 
 DAY: 25
-Remaining tools after customers return tools: [[Paint1, Paint2], [], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
-BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
-JoshCasul rented: [Paint2] Day length of rent time: 1 Price: $15
-Total amount made for the day: $30
-Remaining tools in the rental store: [[], [], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint1, Paint4], [], [Yardwork2, Yardwork1, Yardwork3, Yardwork0], [Plumbing2], []]
+BruceCasul rented: [Paint1, Paint4] Day length of rent time: 2 Price: $30
+JoeBuss rented: [Yardwork1, Yardwork2, Yardwork3] Day length of rent time: 3 Price: $135
+Total amount made for the day: $165
+Remaining tools in the rental store: [[], [], [Yardwork0], [Plumbing2], []]
 
 
 DAY: 26
-Remaining tools after customers return tools: [[Paint3], [Concrete0], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
-NateCasul rented: [Yardwork3, Yardwork4] Day length of rent time: 2 Price: $90
-RosaCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-Total amount made for the day: $105
-Remaining tools in the rental store: [[], [Concrete0], [], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint0, Paint2], [Concrete3, Concrete1], [Yardwork0], [Plumbing2, Plumbing1, Plumbing3], []]
+NateCasul rented: [Paint0] Day length of rent time: 1 Price: $15
+MikeBuss rented: [Plumbing1, Plumbing3, Plumbing2] Day length of rent time: 3 Price: $150
+Total amount made for the day: $165
+Remaining tools in the rental store: [[Paint2], [Concrete3, Concrete1], [Yardwork0], [], []]
 
 
 DAY: 27
-Remaining tools after customers return tools: [[Paint1, Paint2], [Concrete0], [], [Plumbing1, Plumbing4], [Woodwork3]]
-BruceCasul rented: [Paint1, Paint2] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-Total amount made for the day: $60
-Remaining tools in the rental store: [[], [], [], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint2, Paint1, Paint4], [Concrete3, Concrete1], [Yardwork0], [], []]
+BruceCasul rented: [Paint2] Day length of rent time: 1 Price: $15
+JoshCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+RosaCasul rented: [Concrete1, Concrete3] Day length of rent time: 2 Price: $60
+Total amount made for the day: $90
+Remaining tools in the rental store: [[Paint1], [], [Yardwork0], [], []]
 
 
 DAY: 28
-Remaining tools after customers return tools: [[Paint3], [Concrete2, Concrete4, Concrete3], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
-NateCasul rented: [Concrete3, Concrete4] Day length of rent time: 2 Price: $60
-RosaCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-Total amount made for the day: $75
-Remaining tools in the rental store: [[], [Concrete2], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint1, Paint0], [], [Yardwork0], [], []]
+NateCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+Total amount made for the day: $15
+Remaining tools in the rental store: [[Paint0], [], [Yardwork0], [], []]
 
 
 DAY: 29
-Remaining tools after customers return tools: [[Paint1, Paint2], [Concrete2, Concrete0], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
-BruceCasul rented: [Paint1] Day length of rent time: 1 Price: $15
+Remaining tools after customers return tools: [[Paint0, Paint2, Paint4], [Concrete1, Concrete3], [Yardwork0], [], []]
+BruceCasul rented: [Paint0] Day length of rent time: 1 Price: $15
 JoshCasul rented: [Paint2] Day length of rent time: 1 Price: $15
 Total amount made for the day: $30
-Remaining tools in the rental store: [[], [Concrete2, Concrete0], [Yardwork3, Yardwork4], [Plumbing1, Plumbing4], [Woodwork3]]
+Remaining tools in the rental store: [[Paint4], [Concrete1, Concrete3], [Yardwork0], [], []]
 
 
 DAY: 30
-Remaining tools after customers return tools: [[Paint3], [Concrete2, Concrete0, Concrete3, Concrete4], [Yardwork3, Yardwork4, Yardwork1, Yardwork0, Yardwork2], [Plumbing1, Plumbing4, Plumbing0, Plumbing3, Plumbing2], [Woodwork3]]
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-BlakeBuss rented: [Concrete2, Concrete3, Concrete4] Day length of rent time: 3 Price: $90
-JoeBuss rented: [Yardwork3, Yardwork4, Yardwork1] Day length of rent time: 3 Price: $135
-JohnBuss rented: [Plumbing1, Plumbing2, Plumbing3] Day length of rent time: 3 Price: $150
-Total amount made for the day: $390
-Remaining tools in the rental store: [[], [Concrete0], [Yardwork0, Yardwork2], [Plumbing4, Plumbing0], [Woodwork3]]
+Remaining tools after customers return tools: [[Paint4, Paint1], [Concrete1, Concrete3, Concrete4, Concrete0, Concrete2], [Yardwork0], [], []]
+NateCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+BlakeBuss rented: [Concrete4, Concrete0, Concrete2] Day length of rent time: 3 Price: $90
+Total amount made for the day: $105
+Remaining tools in the rental store: [[Paint1], [Concrete1, Concrete3], [Yardwork0], [], []]
 
 
 DAY: 31
-Remaining tools after customers return tools: [[Paint1, Paint2], [Concrete0], [Yardwork0, Yardwork2], [Plumbing4, Plumbing0], [Woodwork3, Woodwork1, Woodwork2, Woodwork0]]
-BruceCasul rented: [Paint1, Paint2] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Yardwork2, Yardwork0] Day length of rent time: 2 Price: $90
-RosaCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-MikeBuss rented: [Woodwork1, Woodwork3, Woodwork2] Day length of rent time: 3 Price: $60
-Total amount made for the day: $210
-Remaining tools in the rental store: [[], [], [], [Plumbing4, Plumbing0], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint1, Paint0, Paint2], [Concrete1, Concrete3], [Yardwork0], [], []]
+BruceCasul rented: [Paint0, Paint1] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete1, Concrete3] Day length of rent time: 2 Price: $60
+Total amount made for the day: $90
+Remaining tools in the rental store: [[Paint2], [], [Yardwork0], [], []]
 
 
 DAY: 32
-Remaining tools after customers return tools: [[Paint3], [], [], [Plumbing4, Plumbing0], [Woodwork0]]
-NateCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-Total amount made for the day: $15
-Remaining tools in the rental store: [[], [], [], [Plumbing4, Plumbing0], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint2, Paint4], [], [Yardwork0, Yardwork1, Yardwork2, Yardwork3], [], []]
+NateCasul rented: [Paint2, Paint4] Day length of rent time: 2 Price: $30
+RosaCasul rented: [Yardwork3] Day length of rent time: 1 Price: $45
+JoeBuss rented: [Yardwork0, Yardwork2, Yardwork1] Day length of rent time: 3 Price: $135
+Total amount made for the day: $210
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 33
-Remaining tools after customers return tools: [[Paint1, Paint2], [Concrete0], [Yardwork2, Yardwork0], [Plumbing4, Plumbing0], [Woodwork0]]
-BruceCasul rented: [Paint1, Paint2] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-RosaCasul rented: [Yardwork2] Day length of rent time: 1 Price: $45
-Total amount made for the day: $105
-Remaining tools in the rental store: [[], [], [Yardwork0], [Plumbing4, Plumbing0], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint0, Paint1], [Concrete1, Concrete3], [], [Plumbing1, Plumbing3, Plumbing2], []]
+BruceCasul rented: [Paint0, Paint1] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete3, Concrete1] Day length of rent time: 2 Price: $60
+MikeBuss rented: [Plumbing3, Plumbing1, Plumbing2] Day length of rent time: 3 Price: $150
+Total amount made for the day: $240
+Remaining tools in the rental store: [[], [], [], [], []]
 
 
 DAY: 34
-Remaining tools after customers return tools: [[Paint3], [], [Yardwork0], [Plumbing4, Plumbing0], [Woodwork0]]
-NateCasul rented: [Plumbing4, Plumbing0] Day length of rent time: 2 Price: $100
-Total amount made for the day: $100
-Remaining tools in the rental store: [[Paint3], [], [Yardwork0], [], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint2, Paint4], [], [Yardwork3], [], []]
+NateCasul rented: [Paint2] Day length of rent time: 1 Price: $15
+RosaCasul rented: [Paint4] Day length of rent time: 1 Price: $15
+Total amount made for the day: $30
+Remaining tools in the rental store: [[], [], [Yardwork3], [], []]
 
 
 DAY: 35
-Remaining tools after customers return tools: [[Paint3, Paint1, Paint2], [Concrete0], [Yardwork0, Yardwork2], [], [Woodwork0]]
-BruceCasul rented: [Paint2, Paint1] Day length of rent time: 2 Price: $30
-JoshCasul rented: [Paint3] Day length of rent time: 1 Price: $15
-RosaCasul rented: [Concrete0] Day length of rent time: 1 Price: $30
-Total amount made for the day: $75
-Remaining tools in the rental store: [[], [], [Yardwork0, Yardwork2], [], [Woodwork0]]
+Remaining tools after customers return tools: [[Paint0, Paint1], [Concrete3, Concrete1], [Yardwork3], [], []]
+BruceCasul rented: [Paint1, Paint0] Day length of rent time: 2 Price: $30
+JoshCasul rented: [Concrete3, Concrete1] Day length of rent time: 2 Price: $60
+Total amount made for the day: $90
+Remaining tools in the rental store: [[], [], [Yardwork3], [], []]
 
 
-Total amount made out of 35 days: $4620
-Total number of tools rented by causual customers: 90
-Total number of tools rented by bussines customers: 57
-Total number of tools rented by regular customers: 9
+Total amount made out of 35 days: $4405
+Total number of tools rented by causual customers: 93
+Total number of tools rented by bussines customers: 45
+Total number of tools rented by regular customers: 15
