@@ -16,10 +16,13 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+
+motivation_list = []
 //adding new items to the list
 function motivationFunction() {
   var listItem = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
+  motivation_list.push(inputValue);
   var t = document.createTextNode(inputValue);
   listItem.appendChild(t);
   if (inputValue === '') {
@@ -43,13 +46,17 @@ function motivationFunction() {
   }
 }
 
+var todo_list = []
+
+
 function todoFunction() {
   var listItem = document.createElement("li");
   var inputValue = document.getElementById("myInput2").value;
+  todo_list.push(inputValue);
   var t = document.createTextNode(inputValue);
   listItem.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("You must write something Nate!");
   } else {
     document.getElementById("toDoList").appendChild(listItem);
   }
@@ -69,10 +76,13 @@ function todoFunction() {
   }
 }
 
+var goals_list = []
+
 
 function goalsFunction() {
   var listItem = document.createElement("li");
   var inputValue = document.getElementById("myInput3").value;
+  goals_list.push(inputValue);
   var t = document.createTextNode(inputValue);
   listItem.appendChild(t);
   if (inputValue === '') {
@@ -96,10 +106,12 @@ function goalsFunction() {
   }
 }
 
+var schedule_list = []
 
 function schedFunction() {
   var listItem = document.createElement("li");
   var inputValue = document.getElementById("myInput4").value;
+  schedule_list.push(inputValue);
   var t = document.createTextNode(inputValue);
   listItem.appendChild(t);
   if (inputValue === '') {
@@ -108,6 +120,7 @@ function schedFunction() {
     document.getElementById("schedList").appendChild(listItem);
   }
   document.getElementById("myInput4").value = "";
+
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -121,4 +134,42 @@ function schedFunction() {
       div.style.display = "none";
     }
   }
+}
+
+
+
+
+function send_query(){
+  alert("hello");
+  alert("hi hi");
+
+
+  var new_event = {
+        'motivation_list': motivation_list,
+        'todo_list': todo_list,
+        'goals_list': goals_list,
+        'schedule_list': schedule_list
+       };
+
+  alert(new_event);
+  alert(new_event['motivation_list']);
+
+  //$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+  $.ajax({
+            type: "POST",
+            // url: "/Planneddata",
+            url : "{{ url_for('Planneddata') }}",
+            // data: JSON.stringify(new_event),
+            data: JSON.stringify({x: [1.0,2.0,3.0], y: [2.0, 3.0, 1.0]}),
+            // data : {'data':new_event},
+            contentType: "application/json;charset=utf-8",
+            success: function (data){
+              alert("success"+data);
+            },
+            error: function(data) {
+              alert("error" + data);
+            }
+  });
+
 }

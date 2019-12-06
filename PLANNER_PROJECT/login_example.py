@@ -10,11 +10,13 @@ app.config['MONGO_URI'] = 'mongodb://localhost:27017/PlannerDB'
 
 mongo = PyMongo(app)
 
+
+# @app.route('/', methods=['GET', 'POST'])
 @app.route('/')
 def index():
 
     if 'username' in session:
-        return render_template('logout.html') #'You are logged in as ' + session['username']
+        return render_template('home.html')#return render_template('personalPlannerIndex.html')
 
     return render_template('index.html')
 
@@ -48,12 +50,30 @@ def register():
     return render_template('register.html')
 
 
-# @app.route('/logout', methods=['POST'])
-# #@login_required
-# def logout():
-#     session.pop('logged_in', None)
-#     #flash('You were logged out.')
-#     return render_template('index.html')
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/personalPlannerIndex')
+def personalPlannerIndex():
+    return render_template('personalPlannerIndex.html')
+
+
+
+# Add Event to database
+@app.route('/Planneddata', methods=['GET', 'POST'])
+def Planneddata():
+    # if request.method == "POST":
+    #       data=request.get_json()
+
+    # motivation = data["motivation_list"]
+    # print(motivation)
+    data=request.get_json()
+    x = data['x']
+
+    return x
+
+    #return render_template('Planneddata.html', data=data)
 
 @app.route("/logout")
 def logout():
