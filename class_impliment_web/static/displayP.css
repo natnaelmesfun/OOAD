@@ -1,6 +1,6 @@
 
 body {
-  background: #00FA9A !important;
+  background: : #00FA9A !important;
 }
 
 header {
@@ -8,7 +8,6 @@ header {
   color: blue;
   padding: 20px;
   font-family: comic;
-   font-size: 50px;
 }
 
 
@@ -24,7 +23,7 @@ header {
 }
 
 
-.card-body{
-  padding: 50px;
+h2{
 
+  font-family: comic;
 }
