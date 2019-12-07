@@ -103,7 +103,7 @@ def planner_main():
         if schedule:
             UserModel.insert_schedule(users, collection_id, schedule)
 
-        return render_template('displayPage.html')
+        return jsonify("Added to Database")#render_template('displayPage.html')
 
 
 
