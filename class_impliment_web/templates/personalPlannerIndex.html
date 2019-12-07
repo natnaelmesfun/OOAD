@@ -1,5 +1,5 @@
 {% extends "plannerlayout.html" %}
-{% block body %} 
+{% block body %}
 <html>
   <head>
     <title> Personal Planner </title>
@@ -23,18 +23,18 @@
         <div class="header" style='float: right;'>
             <nav>
               <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="/logout">Logout</a></li>
+                <button role="presentation" class="active"><a href="/logout">Logout</a></button>
               </ul>
             </nav>
         </div>
       </div>
     </header>
 
-  
+
   <div class="container">
-    
+
     <form class="form-inline">
-     
+
       <div class = "container">
         <div class="row row-cols-1 row-cols-md-2">
 
@@ -127,11 +127,11 @@
       </div>
 
 
-      <button type="submit" class="btn btn-default">Create Event</button>
+      <button type="submit" class="btn btn-default">Add to planner</button>
 
       <!-- <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
-            <button type="submit" class="btn btn-default" onclick="send_query()">Create Event</button>  
+            <button type="submit" class="btn btn-default" onclick="send_query()">Create Event</button>
       </div>
  -->
     </form>
@@ -141,7 +141,7 @@
     <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
 
   </div>
-<!-- 
+<!--
     <div class="container">
         <br><br><br><br>
         <form class="form-inline">
@@ -161,7 +161,7 @@
     </div>
 
  -->
-    
+
     <script src="bootstrapjs.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

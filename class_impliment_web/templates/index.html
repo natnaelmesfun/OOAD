@@ -5,7 +5,7 @@
     <div class="center" style='text-align: center;'>
         <h1>Login To Your Personal Planner</h1>
     </div>
-    
+
     <form method=POST action="{{ url_for('login') }}">
       <label for="uname"><b>Username</b></label>
       <input type="text" name="username" value="" placeholder="Username or Email" required>
@@ -21,8 +21,7 @@
     </form>
     <br>
     <div class="login-help">
-        <a href="{{ url_for('register') }}" class="cancelbtn" style='float: left;text-decoration: none;color: white;'>Sign Up or an account</a>
-        <button type="button" class="cancelbtn" style='float: right;'>Forgot password?</button>
+        <a href="{{ url_for('register') }}" class="cancelbtn" style='color: white;'>Sign Up or an account</a>
     </div>
 </div>
 
