@@ -11,18 +11,18 @@ class UserModel:
 	def insert_database(users, username, hashpass):
 		users.insert({'name' : username, 'password' : hashpass})
 
-	def insert_schedule(users, schedule):
-		users.insert({'schedule' : schedule})
+	def insert_schedule(users, id, schedule):
+		users.update({"_id": id}, {"$set" : {'schedule' : schedule}})
 
-	def insert_goals(users, goals):
-		users.insert({'goals' : goals})
+	def insert_goals(users, id, goals):
+		users.update({"_id": id}, {"$set" : {'goals' : goals}})
 
-	def insert_todo(users, todo):
-		users.insert({'todo' : todo})
+	def insert_todo(users, id,todo):
+		users.update({"_id": id}, {"$set" : {'todo' : todo}})
 
 
-	def insert_motivations(users, motivations):
-		users.insert({'motivations' : motivations})
+	def insert_motivations(users, id, motivations):
+		users.update({"_id": id}, {"$set" : {'motivations' : motivations}})
 
 
 

@@ -1,6 +1,5 @@
 from flask import Flask, render_template, url_for, request, session, redirect, jsonify
 from flask_login import logout_user
-# from flask_ import LoginManager, login_user, current_user, login_required, logout_user
 from flask_pymongo import PyMongo
 import bcrypt
 from planner_controller import User
@@ -18,6 +17,7 @@ mongo = PyMongo(app)
 def index():
 
     if 'username' in session:
+        username = session['username']
         return render_template('home.html')
     return render_template('index.html')
 
@@ -28,14 +28,17 @@ def home():
 
 @app.route('/login', methods=['POST'])
 def login():
+    session['username'] = request.form['username']  #.strip()
     users = mongo.db.users
-    # login_user = users.find_one({'name' : request.form['username']})
-    login_user = UserModel.find_user(users, request.form['username'])
+    login_user = users.find_one({'name' : request.form['username']})
+    # login_user = UserModel.find_user(users, request.form['username'])
+
 
     if login_user:
-        hashpass = User.hash_pass(request.form['pass'].encode('utf-8'))
-        User.validate_login(hashpass, request.form['pass'])
-        if User.validate_login(hashpass, request.form['pass']):
+        # hashpass = User.hash_pass(request.form['pass'].encode('utf-8'))
+        hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
+        # User.validate_login(hashpass, request.form['pass'])
+        if bcrypt.hashpw(bytes(request.form['pass'], 'utf-8'), hashpass) == hashpass:
             session['username'] = request.form['username']
             return redirect(url_for('index'))
 
@@ -73,7 +76,10 @@ def personalPlannerIndex():
 def planner_main():
 
     if request.method == 'POST':
+        user_name = session.get('username')
         users = mongo.db.users
+        user_mongo = users.find_one({'name' : user_name})
+        collection_id = user_mongo.get('_id')
         data = request.json
 
         #Retriving data
@@ -85,19 +91,36 @@ def planner_main():
         #Inserting data into database
 
         if motivations:
-            UserModel.insert_motivations(users, motivations)
+            UserModel.insert_motivations(users, collection_id, motivations)
+            # users.update({"_id": collection_id}, {"$set" : {'motivations' : motivations}})
 
         if todo:
-            UserModel.insert_todo(users, todo)
+            UserModel.insert_todo(users, collection_id, todo)
 
         if goals:
-            UserModel.insert_goals(users, goals)
+            UserModel.insert_goals(users, collection_id, goals)
 
         if schedule:
-            UserModel.insert_schedule(users, schedule)
+            UserModel.insert_schedule(users, collection_id, schedule)
+
+        return render_template('displayPage.html')
 
 
-        return jsonify(motivations) #jsonify(current_user)
+
+@app.route('/displayPage')
+def displayPage():
+
+    user_name = session.get('username')
+    users = mongo.db.users
+    user_mongo = users.find_one({'name' : user_name})
+
+    motivations = user_mongo.get('motivations')
+    todo = user_mongo.get('todo')
+    goals = user_mongo.get('goals')
+    schedule = user_mongo.get('schedule')
+
+    return render_template('displayPage.html', motivations=motivations, todo=todo, goals=goals, schedule=schedule)
+
 
 
 @app.route("/logout")
