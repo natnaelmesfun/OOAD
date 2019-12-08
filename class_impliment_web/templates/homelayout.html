@@ -9,7 +9,9 @@
 
 
    <title>Home</title>
-   <link href="{{ url_for('static', filename='login.css') }}" type="text/css" rel="stylesheet">
+   <!-- <link href="{{ url_for('static', filename='login.css') }}" type="text/css" rel="stylesheet"> -->
+   <link href="{{ url_for('static', filename='navbar.css') }}" type="text/css" rel="stylesheet">
+   <link href="{{ url_for('static', filename='home.css') }}" type="text/css" rel="stylesheet">
 
  </head>
 
@@ -18,7 +20,7 @@
 
   {% block body %}{% endblock %}
 
-    <header>
+    <!-- <header>
       <div class="container">
         <strong><nav>
           <ul class="menu">
@@ -26,7 +28,12 @@
           </ul>
         </nav></strong>
       </div>
-    </header>
+    </header> -->
+
+    <div class="container">
+      <img src="static/silver-click-pen-on-open-book-210660.jpg" alt="Snow">
+      <a class="btn" href="{{ url_for('personalPlannerIndex') }}">Plan your Personal Planner</a>
+    </div>
     
     
  </body>
