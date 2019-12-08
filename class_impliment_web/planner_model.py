@@ -20,9 +20,21 @@ class UserModel:
 	def insert_todo(users, id,todo):
 		users.update({"_id": id}, {"$set" : {'todo' : todo}})
 
-
 	def insert_motivations(users, id, motivations):
 		users.update({"_id": id}, {"$set" : {'motivations' : motivations}})
+
+
+	def get_motivations(dictionary):
+		return dictionary.get('motivations')
+
+	def get_todo(dictionary):
+		return dictionary.get('todo')
+
+	def get_goals(dictionary):
+		return dictionary.get('goals')
+
+	def get_schedule(dictionary):
+		return dictionary.get('schedule')
 
 
 

@@ -78,7 +78,7 @@ def planner_main():
     if request.method == 'POST':
         user_name = session.get('username')
         users = mongo.db.users
-        user_mongo = users.find_one({'name' : user_name})
+        user_mongo = UserModel.find_user(users, user_name)
         collection_id = user_mongo.get('_id')
         data = request.json
 
@@ -112,14 +112,11 @@ def displayPage():
 
     user_name = session.get('username')
     users = mongo.db.users
-    user_mongo = users.find_one({'name' : user_name})
+    user_mongo = UserModel.find_user(users, user_name)
 
-    motivations = user_mongo.get('motivations')
-    todo = user_mongo.get('todo')
-    goals = user_mongo.get('goals')
-    schedule = user_mongo.get('schedule')
-
-    return render_template('displayPage.html', motivations=motivations, todo=todo, goals=goals, schedule=schedule)
+    return render_template('displayPage.html', motivations=UserModel.get_motivations(user_mongo),
+        todo=UserModel.get_todo(user_mongo), goals=UserModel.get_goals(user_mongo), 
+        schedule=UserModel.get_schedule(user_mongo))
 
 
 
