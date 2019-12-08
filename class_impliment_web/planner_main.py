@@ -30,15 +30,15 @@ def home():
 def login():
     session['username'] = request.form['username']  #.strip()
     users = mongo.db.users
-    login_user = users.find_one({'name' : request.form['username']})
-    # login_user = UserModel.find_user(users, request.form['username'])
+    # login_user = users.find_one({'name' : request.form['username']})
+    login_user = UserModel.find_user(users, request.form['username'])
 
 
     if login_user:
         # hashpass = User.hash_pass(request.form['pass'].encode('utf-8'))
         hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
         # User.validate_login(hashpass, request.form['pass'])
-        if bcrypt.hashpw(bytes(request.form['pass'], 'utf-8'), hashpass) == hashpass:
+        if User.validate_login(hashpass, request.form['pass']):
             session['username'] = request.form['username']
             return redirect(url_for('index'))
 
