@@ -4,4 +4,8 @@ Members: Natnael Abraha, Joshua Barber
 
 The language used for developing the website is Python using the Flask framework.
 
-To run the app excute: ptyhon planner_main.py
+Special instructions: Make sure you have MongoDB downloaded on your environment. 
+                      Download Robo3T and create a connection, name it 'PlannerDB'
+                      Make sure the connection is 'localhost:27017'
+
+To run the app excute: python planner_main.py
